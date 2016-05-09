@@ -1,8 +1,8 @@
 'use strict';
+import React from 'react-native';
+import SearchPage from './iOSsrc/search';
 
-var React = require('react-native');
-
-var styles = React.StyleSheet.create({
+const styles = React.StyleSheet.create({
   text: {
     color: 'black',
     backgroundColor: 'white',
@@ -27,7 +27,7 @@ class PropertyFinderApp extends React.Component {
         style={styles.container}
         initialRoute={{
           title: 'Property Finder',
-          component: HelloWorld,
+          component: SearchPage,
         }}/>
     );
   }
