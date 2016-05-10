@@ -47,6 +47,10 @@ class SearchResults extends Component {
     };
   }
 
+  rowPressed(propertyGuid) {
+    let property = this.props.listings.filter(prop => prop.guid === propertyGuid)[0];
+  }
+
   renderRow(rowData, sectionID, rowID) {
     let price = rowData.price_formatted.split(' ')[0];
     return (
